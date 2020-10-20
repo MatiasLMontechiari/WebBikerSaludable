@@ -18,8 +18,26 @@ header {
   background: purple;
 }
 
+h3 {
+    display: inline-block;
+    margin: 1em auto;
+}
+
+h2:after {
+    display: block;
+    margin: 1em auto;
+    height: 2px;
+    background-color: #c01f7d;
+    content: " ";
+    width: 100px;
+}
+
 section {
-    padding: 80px 0;
+    padding: 2em 0;
+}
+
+footer {
+    background-color: yellow;
 }
 
 #barra {
