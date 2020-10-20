@@ -28,7 +28,6 @@ section {
   position: absolute;
   top: 4em;
   right: -100%;
-  background:b;
   transition: right .5s ease;
   opacity: 0.8;
 }
@@ -36,14 +35,14 @@ section {
 #barra li {
   list-style: none;
   margin: 1em;
-  width: 90%;
+  width: 80%;
   display: inline-block;
 }
 
 #barra li a {
   text-decoration: none;
-  color: rgb(100, 2, 84);
   line-height: 2em;
+  color: rgb(100, 2, 84);
 }
 /*FIN DE CONFIGURACIONES BASICAS*/
 
@@ -62,33 +61,33 @@ input[type=submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: #c01f7d;
-    border: 1px solid #c01f7d;
+    background-color: rgb(100, 2, 84);
+    border: 1px solid rgb(100, 2, 84);
     color: #fff;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #c01f7d;
-    color: #c01f7d;
+    border: 1px solid rgb(100, 2, 84);
+    color: rgb(100, 2, 84);
 }
 
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #c01f7d;
+    background-color: rgb(100, 2, 84);
 }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #c01f7d;
+    border: 1px solid rgb(100, 2, 84);
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #c01f7d;
+    border: 1px solid rgb(100, 2, 84);
     color: #fff;
 }
 /*FIN DE BOTONES PARA REUTILIZAR*/
