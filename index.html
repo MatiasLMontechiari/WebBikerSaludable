@@ -29,8 +29,8 @@
         <div id="hero-text">
             <h1>La vida sana va sobre<br>pedales</h1>
             <p>Enterate de todos los beneficios que te da este deporte</p>
-            <a class="btn btn-full" href="#">Quiero Leer!</a>
-            <a class="btn btn-ghost" href="#">Quiero Ver!</a>
+            <a class="btn btn-full" href="#beneficios">Quiero Leer!</a>
+            <a class="btn btn-ghost" href="#videos">Quiero Ver!</a>
         </div>
     </header>
 
@@ -149,8 +149,27 @@
         <div class="fila">
             <h2>Formulario de contacto</h2>
             <p>Si queres participar de los grupos que organizamos en nuestra página, completá el formulario de contacto
-                para
-                que podamos enviarte los dias y horarios de salidas.</p>
+                para que podamos enviarte los dias y horarios de salidas.</p>
+            <div class="fila">
+                <form method="post" action="#" class="contact-form">
+                    <div class="fila">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="fila">
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div class="fila">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="fila">
+                        <textarea name="mensaje" placeholder="Tu comentario aca"></textarea>
+                    </div>
+                    <div class="fila">
+                        <label>&nbsp;</label>
+                        <input type="submit" value="Send it!">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 

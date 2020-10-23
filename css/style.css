@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -41,10 +45,6 @@ section {
     margin: 2em 0;
 }
 
-footer {
-    
-}
-
 blockquote {
     padding: 2%;
     line-height: 145%;
@@ -74,12 +74,12 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
 }
+/*FIN DE CONFIGURACIONES BASICAS*/
 
 /*INICIO Base de apilamiento de columnas */
 .columna {
     float: left;
 }
-  
 /* Clear floats despues de las columnas*/
   .fila:after {
     content: "";
@@ -109,7 +109,34 @@ cite img {
   line-height: 2em;
   color: rgb(100, 2, 84);
 }
-/*FIN DE CONFIGURACIONES BASICAS*/
+
+/*INICIO DE ESTILOS PARA FORMULARIO*/
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+textarea {
+    height: 100px;
+}
+
+/*FIN DE ESTILOS PARA FORMULARIO*/
 
 /*INICIO DE BOTONES PARA REUTILIZAR*/
 .btn:link,
@@ -160,14 +187,12 @@ input[type=submit]:active {
 
 /*INICIO DE MEDIA QUERY PARA MOBILE Y TABLET POR EL MOMENTO....*/
 @media screen and (max-width: 991px) {
-
   nav {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
   }
-
   #hamburguesa li {
       list-style: none;
       text-indent: -100px;
@@ -176,39 +201,35 @@ input[type=submit]:active {
       width: 2.5em;
       float: right;
   }
-
   #hamburguesa li a {
       background: url("../img/menu.png") no-repeat center center;
       background-size: cover;
       display: block;
       height: 2.5em;
   }
-
   #hamburguesa li:last-child {
       display: none;
   }
-
   nav:target #barra {
       right: 0;
       background-color: black;
   }
-
   body {
       overflow-x: hidden;
   }
-
+  #barra {
+      background-color: black;
+      opacity: 0.9;
+  }
   nav:target #hamburguesa li:first-child {
       display: none;
   }
-
   nav:target #hamburguesa li:last-child {
       display: block;
   }
-
   #barra li a {
     color: white;
   }
-
   /* INICIO Grilla a 3 Columnas para Mobile y Tablet */
   .columna-de-3 {
 	width: 100%; 
@@ -225,13 +246,11 @@ input[type=submit]:active {
 #hero-text p {
   margin: 5% auto;
 }
-
 .btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid white;
     color: white;
 }
-
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
@@ -239,7 +258,6 @@ input[type=submit]:active {
     background-color: white;
     color: rgb(100, 2, 84);
 }
-
 }
 /*FIN DE MEDIA QUERY PARA MOBILE Y TABLET POR EL MOMENTO....*/
 
