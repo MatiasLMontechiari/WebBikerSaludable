@@ -216,7 +216,6 @@ input[type=submit]:active {
       margin-top: .75em;
       width: 2.5em;
       float: right;
-      overflow-x: hidden;
   }
   #hamburguesa li a {
       background: url("../img/menu.png") no-repeat center center;
