@@ -18,6 +18,8 @@ body {
     font-size: 18px;
     text-align: center;
     max-width: 100vw;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 li {
@@ -223,10 +225,6 @@ input[type=submit]:active {
       background-color: black;
   }
 
-  html,
-  body {
-      overflow-x: hidden;
-  }
   #barra {
       background-color: black;
       opacity: 0.9;
