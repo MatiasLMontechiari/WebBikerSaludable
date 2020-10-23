@@ -222,6 +222,8 @@ input[type=submit]:active {
       right: 0;
       background-color: black;
   }
+
+  html
   body {
       overflow-x: hidden;
   }
