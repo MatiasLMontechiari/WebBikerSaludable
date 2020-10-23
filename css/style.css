@@ -12,6 +12,7 @@ body {
     text-rendering: optimizeLegibility;
     font-size: 18px;
     text-align: center;
+    max-width: 100vw;
 }
 
 header {
