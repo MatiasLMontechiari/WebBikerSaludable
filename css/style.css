@@ -19,7 +19,6 @@ header {
 }
 
 h3 {
-    display: inline-block;
     margin: 1em auto;
 }
 
@@ -33,12 +32,56 @@ h2:after {
 }
 
 section {
-    padding: 2em 0;
+    margin: 2em 0;
 }
 
 footer {
     background-color: yellow;
 }
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    margin-right: 200px;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*INICIO Base de apilamiento de columnas */
+.columna {
+    float: left;
+}
+  
+/* Clear floats despues de las columnas*/
+  .fila:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/*FIN Base de apilamiento de columnas*/
 
 #barra {
   width: 100%;
@@ -156,10 +199,16 @@ input[type=submit]:active {
   nav:target #hamburguesa li:last-child {
       display: block;
   }
+
+  /* INICIO Grilla a 3 Columnas para Mobile y Tablet */
+  .columna-de-3 {
+	width: 100%; 
+  }
+/* FIN Grilla a 3 Columnas para desktop */
 }
 /*FIN DE MEDIA QUERY PARA MOBILE Y TABLET POR EL MOMENTO....*/
 
-/*INICIO DE MEDIA QUERY PARA PC*/
+/*INICIO DE MEDIA QUERY PARA DESKTOP*/
 @media screen and (min-width: 992px) {
 
   #hamburguesa {
@@ -168,7 +217,7 @@ input[type=submit]:active {
 
   header {
       height: 100vh;
-      max-width: 100%;
+      max-width: 100;
       background: url("../img/banner.jpg") no-repeat center center;
       background-size: cover;
   }
@@ -209,5 +258,10 @@ input[type=submit]:active {
   #hero-text p {
     margin: 5% auto;
   }
+/* INICIO Grilla a 3 Columnas para desktop */
+  .columna-de-3 {
+	width: 32.26%; 
+  }
+/* FIN Grilla a 3 Columnas para desktop */
 }
-/*FIN DE MEDIA QUERY PARA PC*/
+/*FIN DE MEDIA QUERY PARA DESKTOP*/
