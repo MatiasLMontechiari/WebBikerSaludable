@@ -197,7 +197,7 @@ input[type=submit]:active {
   
   html,
   body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
     position: relative; /*Sin esto en Safari no funciona el overflow-x hidden*/
   }
 
@@ -216,6 +216,7 @@ input[type=submit]:active {
       margin-top: .75em;
       width: 2.5em;
       float: right;
+      overflow-x: hidden;
   }
   #hamburguesa li a {
       background: url("../img/menu.png") no-repeat center center;
