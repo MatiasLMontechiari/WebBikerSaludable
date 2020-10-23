@@ -142,7 +142,6 @@ textarea {
 textarea {
     height: 100px;
 }
-
 /*FIN DE ESTILOS PARA FORMULARIO*/
 
 /*INICIO DE BOTONES PARA REUTILIZAR*/
@@ -192,17 +191,18 @@ input[type=submit]:active {
 }
 /*FIN DE BOTONES PARA REUTILIZAR*/
 
-/*INICIO DE MEDIA QUERY PARA MOBILE Y TABLET POR EL MOMENTO....*/
-@media screen and (max-width: 991px) {
+/*INICIO DE MEDIA QUERY PARA MOBILE*/
+@media screen and (max-width: 600px) {
   
   html,
   body {
+    font-size: 16px;
     overflow-x: hidden; 
-    position: relative; /*Sin esto en Safari no funciona el overflow-x hidden*/
+    position: relative; /*Sin esto en Safari no funcionaba el overflow-x hidden*/
   }
 
   header {
-      height: 70vh;
+      height: 95vh;
   }
   nav {
       position: absolute;
@@ -254,8 +254,8 @@ input[type=submit]:active {
     display: inline-block;
     text-align: left;
     color: white;
-    width: 85%;
-    margin-top: 50px;
+    max-width: 90%;
+    margin-top: 20%;
 }
 #hero-text p {
   margin: 5% auto;
