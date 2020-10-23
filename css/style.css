@@ -198,7 +198,7 @@ input[type=submit]:active {
   html,
   body {
     overflow-x: hidden;
-    position: relative;
+    position: relative; /*Sin esto en Safari no funciona el overflow-x hidden*/
   }
 
   header {
