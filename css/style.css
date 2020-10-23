@@ -90,7 +90,6 @@ cite img {
   top: 4em;
   right: -100%;
   transition: right .5s ease;
-  opacity: 0.8;
 }
 
 #barra li {
@@ -186,6 +185,7 @@ input[type=submit]:active {
 
   nav:target #barra {
       right: 0;
+      background-color: black;
   }
 
   body {
@@ -200,11 +200,41 @@ input[type=submit]:active {
       display: block;
   }
 
+  #barra li a {
+    color: white;
+  }
+
   /* INICIO Grilla a 3 Columnas para Mobile y Tablet */
   .columna-de-3 {
 	width: 100%; 
   }
 /* FIN Grilla a 3 Columnas para desktop */
+#hero-text {
+    display: inline-block;
+    text-align: left;
+    color: white;
+    width: 80%;
+    margin-top: 20%;
+    height: 100vh;
+}
+#hero-text p {
+  margin: 5% auto;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: white;
+    color: rgb(100, 2, 84);
+}
+
 }
 /*FIN DE MEDIA QUERY PARA MOBILE Y TABLET POR EL MOMENTO....*/
 
