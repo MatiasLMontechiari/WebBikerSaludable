@@ -18,8 +18,6 @@ body {
     font-size: 18px;
     text-align: center;
     max-width: 100vw;
-    overflow: hidden;
-    overflow-y: auto;
 }
 
 li {
@@ -28,6 +26,8 @@ li {
 
 header {
   background: purple;
+  height: 100vh;
+  max-width: 100vw;
 }
 
 h3 {
@@ -224,7 +224,10 @@ input[type=submit]:active {
       right: 0;
       background-color: black;
   }
-
+  html,
+  body {
+      overflow-x: hidden;
+  }
   #barra {
       background-color: black;
       opacity: 0.9;
@@ -277,8 +280,6 @@ input[type=submit]:active {
   }
 
   header {
-      height: 100vh;
-      max-width: 100vw;
       background: url("../img/banner.jpg") no-repeat center center;
       background-size: cover;
   }
