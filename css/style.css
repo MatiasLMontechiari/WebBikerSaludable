@@ -7,12 +7,17 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
     text-rendering: optimizeLegibility;
     font-size: 18px;
     text-align: center;
     max-width: 100vw;
+}
+
+li {
+    list-style: none;
 }
 
 header {
@@ -37,12 +42,11 @@ section {
 }
 
 footer {
-    background-color: yellow;
+    
 }
 
 blockquote {
     padding: 2%;
-    font-style: italic;
     line-height: 145%;
     position: relative;
     margin-top: 40px;
