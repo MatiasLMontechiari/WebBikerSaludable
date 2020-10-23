@@ -74,6 +74,12 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+input[type=submit] {
+    width: 70%;
+    font-weight: 500 !important;
+    font-family: 'Poppins', sans-serif;
+}
 /*FIN DE CONFIGURACIONES BASICAS*/
 
 /*INICIO Base de apilamiento de columnas */
@@ -112,18 +118,19 @@ cite img {
 
 /*INICIO DE ESTILOS PARA FORMULARIO*/
 .contact-form {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
 input[type=text],
 input[type=email],
 textarea {
-    width: 100%;
+    width:70%;
     padding: 7px;
     border-radius: 10px 10px 10px 10px;
     border: 1px solid #ccc;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 ::placeholder {
@@ -149,6 +156,7 @@ input[type=submit] {
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
+
 
 .btn-full:link,
 .btn-full:visited,
