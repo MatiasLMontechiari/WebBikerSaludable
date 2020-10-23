@@ -213,8 +213,8 @@ input[type=submit]:active {
     display: inline-block;
     text-align: left;
     color: white;
-    width: 80%;
-    margin-top: 20%;
+    width: 85%;
+    margin-top: 40%;
     height: 100vh;
 }
 #hero-text p {
