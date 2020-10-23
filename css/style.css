@@ -198,7 +198,6 @@ input[type=submit]:active {
   html,
   body {
     overflow-x: hidden;
-    -webkit-overflow-x: hidden; /*ME VOLVI LOCO CON ESTO!!!!*/
   }
 
   header {
@@ -217,7 +216,7 @@ input[type=submit]:active {
       width: 2.5em;
       float: right;
       overflow-x: hidden;
-      -webkit-overflow-x: hidden; /*ME VOLVI LOCO CON ESTO!!!!*/
+      position: relative;
   }
   #hamburguesa li a {
       background: url("../img/menu.png") no-repeat center center;
