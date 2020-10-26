@@ -202,8 +202,11 @@ input[type=submit]:active {
   }
 
   header {
-      height: 95vh;
+    background: url("../img/banner-mobile.jpg") no-repeat center center;
+    background-size: cover;
+    height: 95vh;
   }
+  
   nav {
       position: absolute;
       top: 0;
@@ -255,7 +258,7 @@ input[type=submit]:active {
     text-align: left;
     color: white;
     max-width: 90%;
-    margin-top: 20%;
+    margin-top: 40%;
 }
 #hero-text p {
   margin: 5% auto;
