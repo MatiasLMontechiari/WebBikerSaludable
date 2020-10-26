@@ -24,6 +24,15 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
 h3 {
     margin: 1em auto;
 }
@@ -35,6 +44,15 @@ h2:after {
     background-color: #c01f7d;
     content: " ";
     width: 100px;
+}
+
+footer h2 {
+    color: white;
+}
+
+#contenido-lectura {
+    width: 70%;
+    margin-left: 15%;
 }
 
 section {
@@ -75,6 +93,10 @@ input[type=submit] {
     width: 70%;
     font-weight: 500 !important;
     font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background: rgb(100, 2, 84);
 }
 /*FIN DE CONFIGURACIONES BASICAS*/
 
@@ -187,6 +209,49 @@ input[type=submit]:active {
 }
 /*FIN DE BOTONES PARA REUTILIZAR*/
 
+/*INICIO DE BOTONES DE REDES */
+#redes {
+    margin-left: auto;
+    margin-right: auto;
+    column-count: 4;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#redes li a{
+    display: inline-block;
+    background: url(../img/sprite.png);
+	width:54px;
+	height:54px;
+	text-indent:-9000px;
+	
+}
+
+#redes li a:hover{
+    background: url(../img/spritehover.png);
+
+}
+#redes li:nth-child(1) a{
+	background-position: 0px -54px;
+	
+}
+#redes li:nth-child(2) a{
+	background-position:-54px -54px;
+}
+#redes li:nth-child(3) a{
+	background-position: -107px -54px;
+	
+}
+#redes li:nth-child(4) a{
+	background-position: -162px -54px;
+	
+}
+
+.contenido-lectura {
+    width: 70%;
+    margin-left: 15%;
+}
+/*FIN DE BOTONES DE REDES */
+
 /*INICIO DE MEDIA QUERY PARA MOBILE*/
 @media screen and (max-width: 600px) {
   
@@ -249,28 +314,31 @@ input[type=submit]:active {
 	width: 100%; 
   }
 /* FIN Grilla a 3 Columnas para desktop */
-#hero-text {
+  #hero-text {
     display: inline-block;
     text-align: left;
     color: white;
     max-width: 90%;
     margin-top: 50%;
-}
-#hero-text p {
+  }
+  #hero-text p {
   margin: 5% auto;
-}
-.btn-ghost:link,
-.btn-ghost:visited {
+  }
+  .btn-ghost:link,
+  .btn-ghost:visited {
     border: 1px solid white;
     color: white;
-}
-.btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+  }
+  .btn:hover,
+  .btn:active,
+  input[type=submit]:hover,
+  input[type=submit]:active {
     background-color: white;
     color: rgb(100, 2, 84);
-}
+  }
+  #redes {
+    width: 60%;
+  }
 }
 /*FIN DE MEDIA QUERY PARA MOBILE Y TABLET POR EL MOMENTO....*/
 
@@ -279,6 +347,10 @@ input[type=submit]:active {
 
   #hamburguesa {
       display: none;
+  }
+
+  #redes {
+      width: 30%;
   }
 
   header {
