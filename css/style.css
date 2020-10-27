@@ -286,7 +286,7 @@ input[type=submit]:active {
     top: 45%;
     width: auto;
     margin-top: -22px;
-    padding: 15px 25px;
+    padding: 10px 20px;
     color: black;
     font-weight: bold;
     font-size: 18px;
@@ -304,7 +304,7 @@ input[type=submit]:active {
   
   .number {
     color: black;
-    padding: 12px 12px;
+    padding: 10px 10px;
     position: absolute;
     background-color: white;
     opacity: 0.4;
