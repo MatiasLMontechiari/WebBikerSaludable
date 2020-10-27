@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script>
+        document.createElement("picture");
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300&display=swap"
         rel="stylesheet">
@@ -37,25 +40,29 @@
     <section id="beneficios">
         <div class="fila">
             <h2>Los beneficios que este deporte aporta</h2>
-            <p class="contenido-lectura">Hay muchos beneficios que tu bici le aporta a tu cuerpo, pero entre los cuales se destacan estos tres.
+            <p class="contenido-lectura">Hay muchos beneficios que tu bici le aporta a tu cuerpo, pero entre los cuales
+                se destacan estos tres.
             </p>
         </div>
 
         <div class="fila">
             <div class="columna columna-de-3">
                 <h3>Reduce el riesgo de sufrir un infarto</h3>
-                <p class="contenido-lectura">Estudios especializados indican que cada vez que andas en bicicleta se reduce el riesgo de sufrir un
+                <p class="contenido-lectura">Estudios especializados indican que cada vez que andas en bicicleta se
+                    reduce el riesgo de sufrir un
                     infarto en mas de un 50%. Esto se debe a que cuando pedaleas el ritmo cardiaco aumenta, la presion
                     arterial disminuye y por lo tanto el corazon economiza recursos.</p>
             </div>
             <div class="columna columna-de-3">
                 <h3>Ayuda a quemar calorias</h3>
-                <p class="contenido-lectura">Andar en bicicleta durante 30 minutos a un ritmo tranquilo te permite quemar hasta 300 calorias.
+                <p class="contenido-lectura">Andar en bicicleta durante 30 minutos a un ritmo tranquilo te permite
+                    quemar hasta 300 calorias.
                     Mientras mas intensidad mayor será la cantidad de calorias que se quemen.</p>
             </div>
             <div class="columna columna-de-3">
                 <h3>Protege las articulaciones</h3>
-                <p class="contenido-lectura">Esta actividad es muy positiva para las articulaciones de las rodillas, ya que a diferencia de otras
+                <p class="contenido-lectura">Esta actividad es muy positiva para las articulaciones de las rodillas, ya
+                    que a diferencia de otras
                     actividades como correr o saltar, entre el 70% y 80% del peso del cuerpo es amortiguado por la silla
                     de la bici.</p>
             </div>
@@ -64,83 +71,144 @@
 
     <section id="imagenes">
         <h2>Veamos unas imágenes de este deporte</h2>
-        <p class="contenido-lectura">En esta galeria de imagenes podras visualizar diferentes estilos de este deporte sobre pedales y que aporta
+        <p class="contenido-lectura">En esta galeria de imagenes podras visualizar diferentes estilos de este deporte
+            sobre pedales y que aporta
             cada uno.</p>
+
+        <div class='slideshow-container'>
+            <div class='slides fade'>
+                <div class='number'>1 / 4</div>
+                <figure>
+                    <picture>
+                        <img src='img/mtb_desktop1.jpg'>
+                    </picture>
+                </figure>
+            </div>
+
+            <div class='slides fade hidden'>
+                <div class='number'>2 / 4</div>
+                <figure>
+                    <picture>
+                        <img src='img/mtb_desktop2.jpg'>
+                    </picture>
+                </figure>
+
+            </div>
+
+            <div class='slides fade hidden'>
+                <div class='number'>3 / 4</div>
+                <figure>
+                    <picture>
+                        <img src='img/route_desktop1.jpg'>
+                    </picture>
+                </figure>
+            </div>
+            <div class='slides fade hidden'>
+                <div class='number'>4 / 4</div>
+                <figure>
+                    <picture>
+                        <img src='img/route_desktop2.jpg'>
+                    </picture>
+                </figure>
+            </div>
+            <a class='prev' onclick="incrementSlides(-1)">&#10094;</a>
+            <a class='next' onclick="incrementSlides(1)">&#10095;</a>
+        </div>
     </section>
 
     <section id="videos">
         <div class="fila">
             <h2>Sigamos a estos genios</h2>
-            <p class="contenido-lectura">En esta seccion vamos a ver a los mejores bikers explicandote que aporte puede darle a tu vida, dar una
+            <p class="contenido-lectura">En esta seccion vamos a ver a los mejores bikers explicandote que aporte puede
+                darle a tu vida, dar una
                 vuelta de pedal cada dia.</p>
         </div>
-        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/TAEgloV1hrU"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+        <div id="video">
+            <iframe src="https://www.youtube.com/embed/TAEgloV1hrU"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
     </section>
 
     <section id="historias">
         <div class="fila">
             <h2>Comenza y no podes dejarlo</h2>
-            <p class="contenido-lectura">No dejes de leer estas experiencias de algunos de los referentes de nuestros grupos de ciclismo, de como
+            <p class="contenido-lectura">No dejes de leer estas experiencias de algunos de los referentes de nuestros
+                grupos de ciclismo, de como
                 este
                 deporte cambio y mejoro su calidad de vida</p>
         </div>
-        <div class="fila">
-            <div class="columna columna-de-3">
-                <blockquote>
-                    Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que comence
-                    hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente. Me
-                    siento
-                    renovado y con mucha energia dia a dia.
-                    <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
-                </blockquote>
-            </div>
-            <div class="columna columna-de-3">
-                <blockquote>
-                    Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que comence
-                    hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente. Me
-                    siento
-                    renovado y con mucha energia dia a dia.
-                    <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
-                </blockquote>
-            </div>
-            <div class="columna columna-de-3">
-                <blockquote>
-                    Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que comence
-                    hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente. Me
-                    siento
-                    renovado y con mucha energia dia a dia.
-                    <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
-                </blockquote>
-            </div>
-            <div class="columna columna-de-3">
-                <blockquote>
-                    Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que comence
-                    hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente. Me
-                    siento
-                    renovado y con mucha energia dia a dia.
-                    <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
-                </blockquote>
-            </div>
-            <div class="columna columna-de-3">
-                <blockquote>
-                    Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que comence
-                    hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente. Me
-                    siento
-                    renovado y con mucha energia dia a dia.
-                    <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
-                </blockquote>
-            </div>
-            <div class="columna columna-de-3">
-                <blockquote>
-                    Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que comence
-                    hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente. Me
-                    siento
-                    renovado y con mucha energia dia a dia.
-                    <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
-                </blockquote>
+
+        <div id="fondo-historias">
+            <div id="fondo-historias-solido">
+                <div class="fila">
+                    <div class="columna columna-de-3">
+                        <blockquote>
+                            Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que
+                            comence
+                            hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente.
+                            Me
+                            siento
+                            renovado y con mucha energia dia a dia.
+                            <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
+                        </blockquote>
+                    </div>
+                    <div class="columna columna-de-3">
+                        <blockquote>
+                            Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que
+                            comence
+                            hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente.
+                            Me
+                            siento
+                            renovado y con mucha energia dia a dia.
+                            <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
+                        </blockquote>
+                    </div>
+                    <div class="columna columna-de-3">
+                        <blockquote>
+                            Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que
+                            comence
+                            hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente.
+                            Me
+                            siento
+                            renovado y con mucha energia dia a dia.
+                            <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
+                        </blockquote>
+                    </div>
+                    <div class="columna columna-de-3">
+                        <blockquote>
+                            Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que
+                            comence
+                            hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente.
+                            Me
+                            siento
+                            renovado y con mucha energia dia a dia.
+                            <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
+                        </blockquote>
+                    </div>
+                    <div class="columna columna-de-3">
+                        <blockquote>
+                            Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que
+                            comence
+                            hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente.
+                            Me
+                            siento
+                            renovado y con mucha energia dia a dia.
+                            <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
+                        </blockquote>
+                    </div>
+                    <div class="columna columna-de-3">
+                        <blockquote>
+                            Luego de la jornada laboral, la verdad es que volvia a casa muy estreado, cansado. Desde que
+                            comence
+                            hace 2 años con la rutina de salir a pedalear una hora por dia mi vida cambio completamente.
+                            Me
+                            siento
+                            renovado y con mucha energia dia a dia.
+                            <cite><img src="img/biker1.jpg" alt="Cristian Rondino Biker Foto">Cristian Rondino</cite>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -148,7 +216,8 @@
     <section id="contacto">
         <div class="fila">
             <h2>Formulario de contacto</h2>
-            <p class="contenido-lectura">Si queres participar de los grupos que organizamos en nuestra página, completá el formulario de contacto
+            <p class="contenido-lectura">Si queres participar de los grupos que organizamos en nuestra página, completá
+                el formulario de contacto
                 para que podamos enviarte los dias y horarios de salidas.</p>
             <div class="fila">
                 <form method="post" action="#" class="contact-form">
@@ -192,6 +261,7 @@
         </div>
     </footer>
     <script src="js/picturefill.js"></script>
+    <script src="js/slideshowgallery.js"></script>
 </body>
 
 </html>
