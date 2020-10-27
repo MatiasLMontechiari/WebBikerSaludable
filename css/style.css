@@ -159,11 +159,11 @@ footer {
 }
 
 figure {
-    text-align: center;
+  text-align: center;
 }
+
 img {
     max-width: 100%;
-    background-color: black;
 }
 
 /*INICIO DE ESTILOS PARA FORMULARIO*/
@@ -287,8 +287,7 @@ input[type=submit]:active {
 /*INICIO CLASES Y ID DE LA GALERIA DE IMAGENES*/
 .slideshow-container {
     position: relative;
-    max-width: 1345px;
-    margin: auto;
+    max-width: 100%;
   }
 
   .hidden {
@@ -322,7 +321,7 @@ input[type=submit]:active {
     padding: 12px 12px;
     position: absolute;
     background-color: white;
-    opacity: 0.6;
+    opacity: 0.4;
   }
   
   .fade {
