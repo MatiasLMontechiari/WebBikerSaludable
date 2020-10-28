@@ -391,6 +391,12 @@ input[type=submit]:active {
     width: 80%;
     margin: 1em;
   }
+
+  #barra li:first-child {
+    background: url("../img/logo_mobile.png") no-repeat center center;
+    padding: 20px 100px;
+    text-indent: -90000px;
+  }
   nav:target #hamburguesa li:first-child {
       display: none;
   }
