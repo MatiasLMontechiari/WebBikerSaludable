@@ -151,7 +151,20 @@ img {
     max-width: 100%;
 }
 
+#enviado {
+  display: none;
+}
+
 /*INICIO DE ESTILOS PARA FORMULARIO*/
+#enviado:target {
+  display: inherit;
+  background-color: yellowgreen;
+  color: white;
+  padding: 1em;
+  width: 70%;
+  margin: 1em auto;
+  border-radius: 30px;
+}
 .contact-form {
     width: 70%;
     margin: 0 auto;
