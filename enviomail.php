@@ -1,4 +1,6 @@
 <?php
+    //La implementacion de este formulario solo esta armada para darle feedback al que originalmente lo envio
+    //falta la implementacion de la recepcion por parte del admin del sitio
     //Se toman los compos del formulario eliminando el contenidod del html
     $nombre = strip_tags(trim($_POST["nombre"]));
     $nombre = str_replace(array("\r","\n"),array(" "," "),$nombre);
@@ -50,7 +52,7 @@
     $message .= "--{$mime_boundary}--";
     $returnpath = "-f" . $from;
     
-    //Enviar EMail
+    //Enviar EMail al que originalmente cargo el formulario
     $mail = @mail($to, $subject, $message, $headers, $returnpath); 
     
     // Se pone en target #Enviado para dar feedback del envio
