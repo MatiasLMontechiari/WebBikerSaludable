@@ -115,6 +115,10 @@ footer {
   }
 /*FIN Base de apilamiento de columnas*/
 
+#botones-vermasmenos {
+  margin-top: 2em;
+}
+
 #fondo-historias {
     margin: 2em auto;
 }
@@ -190,18 +194,6 @@ textarea {
 /*FIN DE ESTILOS PARA FORMULARIO*/
 
 /*INICIO DE BOTONES PARA REUTILIZAR*/
-.btn:link,
-.btn:visited,
-input[type=submit] {
-    display: inline-block;
-    padding: 15px 15px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
@@ -221,7 +213,7 @@ input[type=submit] {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: rgb(100, 2, 84);
+    background-color: rgb(94, 37, 84);
 }
 
 .btn-full:hover,
@@ -289,7 +281,7 @@ input[type=submit]:active {
   .hidden {
     display: none;
   }
-  
+
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -367,7 +359,12 @@ input[type=submit]:active {
 .card-content p {
 	font-size: 80%;
 }
-/*FIN DE CLASES Y ID DE LAS PASTILLAS DE INFORMACION*/
+/*FIN DE CLASES Y ID DE LAS PASTILLAS DE BASICAS*/
+/*INICIO DE CLASES Y ID DEL BOTON VERMAS BASICAS*/
+#puntos {
+  display: none;
+}
+/*FIN DE CLASES Y ID DEL BOTON VERMAS DESKTOP*/
 
 /*INICIO DE MEDIA QUERY PARA MOBILE*/
 @media screen and (max-width: 600px) {
@@ -456,6 +453,18 @@ input[type=submit]:active {
   #hero-text p {
   margin: 5% auto;
   }
+  
+  .btn:link,
+  .btn:visited,
+   input[type=submit] {
+    display: inline-block;
+    padding: 8px 8px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; 
+  }
+
   .btn-ghost:link,
   .btn-ghost:visited {
     border: 1px solid white;
@@ -505,6 +514,35 @@ input[type=submit]:active {
     border: 0;
   }
 /*FIN SECCION VIDEO*/
+/*INICIO DE CLASES Y ID DEL BOTON VERMAS MOBILE*/
+  #puntos {
+    display: inline-block;
+  }
+  #masTextoCardio {
+    display: none;
+  }
+  #masTextoCardio:target {
+    display: block;
+  }
+  #masTextoCalorias {
+    display: none;
+  }
+  #masTextoCalorias:target {
+    display: block;
+  }
+  #masTextoArticulaciones {
+    display: none;
+  }
+  #masTextoArticulaciones:target {
+    display: block;
+  }
+  #masTextoInmune {
+    display: none;
+  }
+  #masTextoInmune:target {
+    display: block;
+  }
+/*FIN DE CLASES Y ID DEL BOTON VERMAS MOBILE*/
 }
 /*FIN DE MEDIA QUERY PARA MOBILE POR EL MOMENTO....*/
 
@@ -591,6 +629,16 @@ input[type=submit]:active {
   #hero-text p {
   margin: 5% auto;
   }
+  .btn:link,
+  .btn:visited,
+  input[type=submit] {
+  display: inline-block;
+  padding: 10px 10px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s; 
+  }
   .btn-ghost:link,
   .btn-ghost:visited {
     border: 1px solid white;
@@ -647,7 +695,36 @@ input[type=submit]:active {
   }
   .card {
     flex: 0 1 calc(50% - 1em);
-}
+  }
+  /*INICIO DE CLASES Y ID DEL BOTON VERMAS TABLET*/
+  #puntos {
+    display: inline-block;
+  }
+  #masTextoCardio {
+    display: none;
+  }
+  #masTextoCardio:target {
+    display: block;
+  }
+  #masTextoCalorias {
+    display: none;
+  }
+  #masTextoCalorias:target {
+    display: block;
+  }
+  #masTextoArticulaciones {
+    display: none;
+  }
+  #masTextoArticulaciones:target {
+    display: block;
+  }
+  #masTextoInmune {
+    display: none;
+  }
+  #masTextoInmune:target {
+    display: block;
+  }
+/*FIN DE CLASES Y ID DEL BOTON VERMAS TABLET*/
 }
 /*FIN DE MEDIA QUERY PARA TABLET....*/
 
@@ -703,6 +780,16 @@ input[type=submit]:active {
       text-decoration: violet   ;
   }
 
+  .btn:link,
+  .btn:visited,
+   input[type=submit] {
+    display: inline-block;
+    padding: 15px 15px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; 
+  }
   #hero-text {
       font-size: 20px;
       position: absolute;
@@ -751,6 +838,7 @@ iframe {
   height: 75vh;
   border: 0;
 }
+/*FIN SECCION VIDEO*/
 /*Las pastillas de informacion en desktop se ven a 4 columnas*/
 .cards {
   display: flex;
@@ -760,6 +848,13 @@ iframe {
 .card {
   flex: 0 1 calc(25% - 1em);
 }
-/*FIN SECCION VIDEO*/
+/*INICIO DE CLASES Y ID DEL BOTON VERMAS DESKTOP*/
+#puntos {
+  display: none;
+}
+#botones-vermasmenos {
+  display: none;
+}
+/*FIN DE CLASES Y ID DEL BOTON VERMAS DESKTOP*/
 }
 /*FIN DE MEDIA QUERY PARA DESKTOP*/
