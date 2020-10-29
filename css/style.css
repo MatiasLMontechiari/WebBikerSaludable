@@ -115,7 +115,7 @@ footer {
   }
 /*FIN Base de apilamiento de columnas*/
 
-#botones-vermasmenos {
+.botones-vermasmenos {
   margin-top: 2em;
 }
 
@@ -355,7 +355,7 @@ input[type=submit]:active {
 }
 /*FIN DE CLASES Y ID DE LAS PASTILLAS DE BASICAS*/
 /*INICIO DE CLASES Y ID DEL BOTON VERMAS BASICAS*/
-#puntos {
+.puntos {
   display: none;
 }
 /*FIN DE CLASES Y ID DEL BOTON VERMAS DESKTOP*/
@@ -508,7 +508,7 @@ input[type=submit]:active {
   }
 /*FIN SECCION VIDEO*/
 /*INICIO DE CLASES Y ID DEL BOTON VERMAS MOBILE*/
-  #puntos {
+  .puntos {
     display: inline-block;
   }
   #masTextoCardio {
@@ -536,6 +536,9 @@ input[type=submit]:active {
     display: block;
   }
 /*FIN DE CLASES Y ID DEL BOTON VERMAS MOBILE*/
+  .cards {
+    margin-top: 2em;
+  }
 }
 /*FIN DE MEDIA QUERY PARA MOBILE POR EL MOMENTO....*/
 
@@ -684,12 +687,13 @@ input[type=submit]:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 2em;
   }
   .card {
     flex: 0 1 calc(50% - 1em);
   }
   /*INICIO DE CLASES Y ID DEL BOTON VERMAS TABLET*/
-  #puntos {
+  .puntos {
     display: inline-block;
   }
   #masTextoCardio {
@@ -835,15 +839,16 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 2em;
 }
 .card {
   flex: 0 1 calc(25% - 1em);
 }
 /*INICIO DE CLASES Y ID DEL BOTON VERMAS DESKTOP*/
-#puntos {
+.puntos {
   display: none;
 }
-#botones-vermasmenos {
+.botones-vermasmenos {
   display: none;
 }
 /*FIN DE CLASES Y ID DEL BOTON VERMAS DESKTOP*/
