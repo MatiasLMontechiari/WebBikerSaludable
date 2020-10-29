@@ -119,14 +119,6 @@ footer {
   margin-top: 2em;
 }
 
-#fondo-historias {
-    margin: 2em auto;
-}
-#fondo-historias-solido {
-    background-color: blueviolet;
-    opacity: 0.9;
-}
-
 #barra {
   max-width: 100%;
   height: calc(100vh - 4em);
@@ -136,6 +128,8 @@ footer {
 #barra li {
   list-style: none;
   display: inline-block;
+  margin: auto
+  width: 10em;
 }
 
 #barra li a {
@@ -213,7 +207,7 @@ input[type=submit] {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: rgb(94, 37, 84);
+    background-color: rgb(155, 52, 175);
 }
 
 .btn-full:hover,
@@ -442,6 +436,9 @@ input[type=submit]:active {
   .columna-de-3 {
 	width: 100%; 
   }
+  .columna-de-2 {
+    width: 100%; 
+  }
 /* FIN 3 Columnas de desktop en mobile va al 100% del width*/
   #hero-text {
     display: inline-block;
@@ -478,10 +475,6 @@ input[type=submit]:active {
     color: rgb(100, 2, 84);
   }
 
-  #fondo-historias {
-    background: url("../img/background-historias-mobile.jpg") no-repeat center center;
-    background-size: cover;
-  }
   #redes {
     width: 60%;
   }
@@ -618,6 +611,9 @@ input[type=submit]:active {
   .columna-de-3 {
   width: 50%; 
   }
+  .columna-de-2 {
+    width: 50%; 
+  }
   /*FIN 3 Columnas de desktop en mobile va al 100% del width*/
   #hero-text {
     display: inline-block;
@@ -652,10 +648,6 @@ input[type=submit]:active {
     color: rgb(100, 2, 84);
   }
   
-  #fondo-historias {
-    background: url("../img/background-historias-mobile.jpg") no-repeat center center;
-    background-size: cover;
-  }
   #redes {
     width: 60%;
   }
@@ -735,11 +727,6 @@ input[type=submit]:active {
       display: none;
   }
 
-  #fondo-historias {
-    background: url("../img/background-historias-desktop.jpg") no-repeat center center;
-    background-size: cover;
-  }
-
   #redes {
       width: 30%;
   }
@@ -762,10 +749,12 @@ input[type=submit]:active {
 
   #barra li {
       font-weight: 600;
-      width: 5em;
-      margin-right: 1em;
       margin-top: 1em;
-      text-align: left;
+      width: 8em;
+    }
+  
+    #barra li a:hover {
+      color: rgb(155, 52, 175);
     }
 
   #barra li:first-child {
@@ -773,7 +762,6 @@ input[type=submit]:active {
     float: left;
     padding: 20px 100px;
     text-indent: -90000px;
-    margin-right: 20%;
   }
 
   #barra li a {
@@ -807,6 +795,9 @@ input[type=submit]:active {
 /* INICIO Grilla a 3 Columnas para desktop */
   .columna-de-3 {
 	width: 32.26%; 
+  }
+  .columna-de-2 {
+    width: 50%; 
   }
 /* FIN Grilla a 3 Columnas para desktop */
 
