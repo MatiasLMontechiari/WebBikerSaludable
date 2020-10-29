@@ -367,26 +367,6 @@ input[type=submit]:active {
 .card-content p {
 	font-size: 80%;
 }
-
-
-@media screen and (min-width: 40em) {
-  .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-
-  .card {
-      flex: 0 1 calc(50% - 1em);
-  }
-}
-
-@media screen and (min-width: 60em) {
-
-  .card {
-      flex: 0 1 calc(25% - 1em);
-  }
-}
 /*FIN DE CLASES Y ID DE LAS PASTILLAS DE INFORMACION*/
 
 /*INICIO DE MEDIA QUERY PARA MOBILE*/
@@ -421,7 +401,7 @@ input[type=submit]:active {
       margin-right: 1%;
   }
   #hamburguesa li a {
-      background: url("../img/menu.png") no-repeat center center;
+      background: url("../img/menu-mobile-tablet.png") no-repeat center center;
       background-size: cover;
       display: block;
       height: 2.5em;
@@ -448,7 +428,7 @@ input[type=submit]:active {
   }
 
   #barra li:first-child {
-    background: url("../img/logo_mobile.png") no-repeat center center;
+    background: url("../img/logo-mobile-tablet.png") no-repeat center center;
     padding: 20px 100px;
     text-indent: -90000px;
   }
@@ -471,7 +451,7 @@ input[type=submit]:active {
     text-align: left;
     color: white;
     max-width: 90%;
-    margin-top: 50%;
+    margin-top: 12em
   }
   #hero-text p {
   margin: 5% auto;
@@ -526,7 +506,150 @@ input[type=submit]:active {
   }
 /*FIN SECCION VIDEO*/
 }
-/*FIN DE MEDIA QUERY PARA MOBILE Y TABLET POR EL MOMENTO....*/
+/*FIN DE MEDIA QUERY PARA MOBILE POR EL MOMENTO....*/
+
+/*INICIO DE MEDIA QUERY PARA TABLET*/
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  html,
+  body {
+    overflow-x: hidden; 
+    position: relative; /*Sin esto en Safari no funcionaba el overflow-x hidden*/
+  }  
+  header {
+    background: url("../img/banner-tablet.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  #hamburguesa li {
+      list-style: none;
+      text-indent: -100px;
+      margin-top: .75em;
+      width: 2.5em;
+      float: right;
+      overflow-x: hidden;
+      margin-right: 1%;
+  }
+  #hamburguesa li a {
+      background: url("../img/menu-mobile-tablet.png") no-repeat center center;
+      background-size: cover;
+      display: block;
+      height: 2.5em;
+  }
+  #hamburguesa li:last-child {
+      display: none;
+  }
+  nav:target #barra {
+      right: 0;
+      background-color: black;
+  }
+  
+  #barra {
+      width: 100%;
+      top: 4em;
+      right: -100%;
+      transition: right .5s ease;
+      background-color: black;
+      opacity: 0.9;
+  }
+  
+  #barra li {
+    width: 80%;
+    margin: 1em;
+  }
+  #barra li:first-child {
+    background: url("../img/logo-mobile-tablet.png") no-repeat center center;
+    padding: 20px 100px;
+    text-indent: -90000px;
+  }
+  nav:target #hamburguesa li:first-child {
+      display: none;
+  }
+  nav:target #hamburguesa li:last-child {
+      display: block;
+  }
+  #barra li a {
+    color: white;
+  }
+  /* INICIO 3 Columnas de desktop en tablet va al 50% del width para generar 2 columnas*/
+  .columna-de-3 {
+  width: 50%; 
+  }
+  /*FIN 3 Columnas de desktop en mobile va al 100% del width*/
+  #hero-text {
+    display: inline-block;
+    text-align: left;
+    color: white;
+    max-width: 90%;
+    margin-top: 12em;
+  }
+  #hero-text p {
+  margin: 5% auto;
+  }
+  .btn-ghost:link,
+  .btn-ghost:visited {
+    border: 1px solid white;
+    color: white;
+  }
+  .btn:hover,
+  .btn:active,
+  input[type=submit]:hover,
+  input[type=submit]:active {
+    background-color: white;
+    color: rgb(100, 2, 84);
+  }
+  
+  #fondo-historias {
+    background: url("../img/background-historias-mobile.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  #redes {
+    width: 60%;
+  }
+  /*INICIO Galeria de imagenes configuracion Mobile*/
+  .next {
+    right: 0.5em;
+  }
+  .prev {
+      left: 0.5em;
+  }
+  .number {
+    top: 0;
+    left: 1em;
+  }
+  /*FIN Galeria de imagenes configuracion Mobile*/
+  /*INICIO SECCION VIDEO*/
+  #video {
+    text-align: center;
+    width: 100vw;
+    height: calc(100vw * 500 / 600);
+    max-width: 100%;
+    max-height: 500px;
+    background: black;
+    margin: auto;
+  }
+    
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  /*Las pastillas de informacion en tablet se ven a 2 columnas*/
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 0 1 calc(50% - 1em);
+}
+}
+/*FIN DE MEDIA QUERY PARA TABLET....*/
 
 /*INICIO DE MEDIA QUERY PARA DESKTOP*/
 @media screen and (min-width: 992px) {
@@ -586,7 +709,7 @@ input[type=submit]:active {
       text-align: left;
       color: rgb(100, 2, 84);
       width: 35%;
-      top: 50%;
+      top: 15em;
       left: 20%;
       transform: translate(-50%, -50%);
   }
@@ -627,6 +750,15 @@ iframe {
   width: 100%;
   height: 75vh;
   border: 0;
+}
+/*Las pastillas de informacion en desktop se ven a 4 columnas*/
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  flex: 0 1 calc(25% - 1em);
 }
 /*FIN SECCION VIDEO*/
 }
