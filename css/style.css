@@ -128,7 +128,7 @@ footer {
 #barra li {
   list-style: none;
   display: inline-block;
-  margin: auto
+  margin: auto;
   width: 10em;
 }
 
