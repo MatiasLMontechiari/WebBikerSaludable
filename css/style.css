@@ -86,6 +86,7 @@ input[type=submit] {
 }
 
 footer {
+    margin-top: 2em;
     background: rgb(100, 2, 84);
 }
 /*FIN DE CONFIGURACIONES BASICAS*/
